@@ -33,18 +33,13 @@ jobs:
 
     - name: Instalar as Dependências do Maven
       run: |
-        mvn clean install
-        mvn test
+        mvn clean test
         exit 0
-
-    - name: Gerar o Relatório HTML
-      run: |
-        mvn allure:report
 
     - name: Criar uma pasta publica e enviar o relatório com os testes
       run: |
         mkdir public
-        cp -r target/site/allure-maven-plugin/* public
+        cp -r target/Spark.html public
 
   
     - name: Realizar Deploy do relatório HTML

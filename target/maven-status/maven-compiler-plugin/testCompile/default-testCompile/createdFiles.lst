@@ -1,4 +1,4 @@
 br\com\interato\BaseTest.class
-br\com\interato\tests\ExploratorioTests.class
 br\com\interato\page\CadastroPage.class
+br\com\interato\tests\testExploratorioTests.class
 br\com\interato\page\HomePage.class
